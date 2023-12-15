@@ -1,11 +1,14 @@
 # RAG evaluation with LlamaIndex
 
-> How important evaluations/tests are to your team seems to be the major differentiator between the people rushing out hot garbage and those seriously building products in this space.
+> How important evaluations/tests are to your team seems to be the major differentiator between the people rushing out hot garbage and those seriously building products in this space.  
+
 [Source](https://news.ycombinator.com/item?id=36789901&ref=blog.langchain.dev#:~:text=how%20important%20evaluations/tests%20are)
 
 I have familiarity building RAG applications using LLM frameworks like [Langchain](https://python.langchain.com/docs/get_started/introduction), but have yet to explore another popular alternative - [LlamaIndex](https://docs.llamaindex.ai/en/stable/).   
 
-RAG evaluation is important and how exactly to go about doing it hasn't been clear to me. Is there a consensus on what metric(s) to use? How can user satisfaction be quantified? This notebook is my attempt to improve my understanding with some practical examples, and heavily references this [tutorial](https://github.com/openai/openai-cookbook/blob/main/examples/evaluation/Evaluate_RAG_with_LlamaIndex.ipynb). LlamaIndex offers a variety of other [evaluation modules](https://docs.llamaindex.ai/en/stable/module_guides/evaluating/root.html) as well.  
+RAG evaluation is important and how exactly to go about doing it hasn't been clear to me. Is there a consensus on what metric(s) to use? How can user satisfaction be quantified? This notebook is my attempt to improve my understanding with some practical examples, and heavily references this [tutorial](https://github.com/openai/openai-cookbook/blob/main/examples/evaluation/Evaluate_RAG_with_LlamaIndex.ipynb). LlamaIndex offers a variety of other [evaluation modules](https://docs.llamaindex.ai/en/stable/module_guides/evaluating/root.html) as well.   
+
+Related [Langchain blogpost](https://blog.langchain.dev/evaluating-rag-pipelines-with-ragas-langsmith/).
 
 ## Evaluation Methods
 
@@ -15,7 +18,7 @@ RAG can be evaluated on two fronts:
 
 ## Challenges
 
-* Even if both retrieval and response scores are high, the answers can still be less than satisfactory e.g. too verbose, not intuitive, etc  
-* Using LLM as an evaluator (which is how it's done in this project) has [drawbacks](https://arxiv.org/abs/2305.17926)
+* Even if both retrieval and response scores are high, the answers can still be less than satisfactory e.g. too verbose, not intuitive, etc.
+* Using LLM as an evaluator (which is how it's done in this project) has [drawbacks](https://arxiv.org/abs/2305.17926).
 
 
